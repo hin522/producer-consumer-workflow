@@ -1,36 +1,8 @@
 # producer-consumer-workflow
 
-FIXME: description
+This is a simple experiment to test the concurrent processing using clojure.core.async channel.
 
-## Installation
+## How to run
 
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar producer-consumer-workflow-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2016 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+    $ lein repl
+    $ (-main [number_of_thread] [number_of_item_to_be_processed])
