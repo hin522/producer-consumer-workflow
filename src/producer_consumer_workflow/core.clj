@@ -8,7 +8,7 @@
   (println "Starting.....")
 
   (let [start-time (Date.)
-        thread-number (or (first args) 1)
+        thread-number (or (first args) 10)
         item-number (or (second args) 100)
         input-channel (to-chan (range item-number))
         output-channel (chan)]
