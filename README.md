@@ -2,6 +2,29 @@
 
 This is a simple experiment to test the concurrent processing using clojure.core.async channel.
 
+
+                                                  +----------+
+                                                  | Consumer/|
+                                        +-------> | Producer | +------+
+                                        |         +----------+        |
+                                        |         +----------+        |
+                                        |         | Consumer/|        |
+                                        +-------> | Producer | +------+
+                                        |         +----------+        |
++----------+                            |         +----------+        |                            +----------+
+| Producer |      +----------------+    |         | Consumer/|        |    +----------------+      | Consumer |
+|          | ---> | input channel  | +----------> | Producer | +---------> | output channel | ---> |          |
++----------+      +----------------+    |         +----------+        |    +----------------+      +----------+
+                                        |         +----------+        |
+                                        |         | Consumer/|        |
+                                        +-------> | Producer | +------+
+                                        |         +----------+        |
+                                        |         +----------+        |
+                                        |         | Consumer/|        |
+                                        +-------> | Producer | +------+
+                                                  +----------+
+
+
 ## How to run
 
     $ lein repl
