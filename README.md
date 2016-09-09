@@ -2,7 +2,7 @@
 
 This is a simple experiment to test the concurrent processing using clojure.core.async channel.
 
-
+<pre>
                                                   +----------+
                                                   | Consumer/|
                                         +-------> | Producer | +------+
@@ -23,7 +23,7 @@ This is a simple experiment to test the concurrent processing using clojure.core
                                         |         | Consumer/|        |
                                         +-------> | Producer | +------+
                                                   +----------+
-
+</pre>
 
 ## How to run
 
